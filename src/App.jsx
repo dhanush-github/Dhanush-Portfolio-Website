@@ -6,7 +6,8 @@ import Experience from "./pages/Experience";
 import Skills from "./pages/Skills";
 import Projects1 from "./pages/Projects1";
 import Projects2 from "./pages/Projects2";
-function App() {
+
+export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
@@ -20,4 +21,3 @@ function App() {
     </BrowserRouter>
   );
 }
-export default App;
