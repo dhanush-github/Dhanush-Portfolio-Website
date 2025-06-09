@@ -5,9 +5,9 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Skills from "./pages/Skills";
 import Projects1 from "./pages/Projects1";
-import Projects2 from "./pages/Projects2";
+import Publications from "./pages/publications";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
@@ -16,8 +16,10 @@ export default function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects1" element={<Projects1 />} />
-        <Route path="/projects2" element={<Projects2 />} />
+        <Route path="/publications" element={<Publications />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;
