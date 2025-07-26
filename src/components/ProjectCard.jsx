@@ -1,33 +1,28 @@
-// src/components/ProjectCard.jsx
 import React from "react";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="bg-white/95 rounded-2xl p-5 shadow-md border border-purple-100 flex flex-col justify-between h-full">
-      <div>
-        <h3 className="text-xl font-bold mb-1 text-purple-700">{project.title}</h3>
-        <div className="text-sm text-gray-500 mb-2">{project.date}</div>
-        <p className="mb-4 text-gray-800">{project.description}</p>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {project.tech.map((skill) => (
-            <span key={skill} className="px-3 py-1 bg-gradient-to-tr from-orange-100 via-fuchsia-100 to-purple-100 text-purple-800 rounded-full text-xs font-semibold shadow">
-              {skill}
-            </span>
-          ))}
-        </div>
-      </div>
-      <div>
-        {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-1 text-sm text-orange-600 hover:text-fuchsia-700 underline"
+    <div className="border border-gray-200 p-5 rounded-xl shadow-sm hover:shadow-md transition bg-white">
+      <h3 className="text-xl font-semibold text-purple-700 mb-1">{project.title}</h3>
+      <p className="text-sm text-gray-700 mb-3">{project.description}</p>
+      <div className="flex flex-wrap gap-2 text-xs mb-4">
+        {project.tech.map((tech, idx) => (
+          <span
+            key={idx}
+            className="bg-gradient-to-r from-orange-200 to-purple-200 text-purple-900 font-semibold px-2 py-1 rounded"
           >
-            View on GitHub
-          </a>
-        )}
+            {tech}
+          </span>
+        ))}
       </div>
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm text-fuchsia-600 hover:underline font-medium"
+      >
+        View Project →
+      </a>
     </div>
   );
 }

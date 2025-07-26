@@ -8,7 +8,8 @@ export default function Navbar() {
     { name: "Home", to: "/" },
     { name: "Experience", to: "/experience" },
     { name: "Skills", to: "/skills" },
-    { name: "Projects", to: "/projects1" },
+    { name: "AI/ML", to: "/projects1" },       // 🔄 Renamed Projects to AI/ML
+    { name: "Analytics", to: "/analytics" },   // ✅ Added Analytics tab
     { name: "Publications", to: "/publications" },
   ];
 
@@ -56,5 +57,4 @@ export default function Navbar() {
     </nav>
   );
 }
-
 

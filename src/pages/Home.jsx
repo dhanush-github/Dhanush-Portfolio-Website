@@ -23,6 +23,7 @@ export default function Home() {
         />
         <span className="absolute bottom-0 right-0 block w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 via-fuchsia-500 to-purple-600 border-4 border-white animate-pulse"></span>
       </div>
+
       <h1 className="mt-6 text-4xl font-bold bg-gradient-to-r from-orange-400 via-fuchsia-500 to-purple-600 text-transparent bg-clip-text">
         N. Sai Dhanush
       </h1>
@@ -32,26 +33,27 @@ export default function Home() {
       <p className="max-w-xl mt-4 mb-6 text-lg text-gray-700">
         Result-driven Data Scientist with expertise in machine learning, analytics, and supply chain optimization. Passionate about turning data into actionable insights and creating business impact.
       </p>
-      <div className="flex gap-6 justify-center mb-8">
+
+      <div className="flex gap-6 justify-center mb-8 flex-wrap">
         <a
           href="mailto:saidhanush.n@gmail.com"
           className="bg-gradient-to-r from-orange-400 to-purple-500 text-white px-6 py-2 rounded-xl shadow font-semibold hover:scale-105 transition"
         >
           Email Me
         </a>
+
         <a
-          href="/Resume-N. sai dhanush.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border border-purple-300 px-6 py-2 rounded-xl font-semibold hover:bg-purple-50 transition"
+          href="/Dhanush-Portfolio-Website/Resume_N_Sai_Dhanush.pdf"
+          download
+          className="border border-purple-400 px-6 py-2 rounded-xl font-semibold hover:bg-purple-50 transition"
         >
           Download Resume
         </a>
+
         <a
-          href="/SaiDhanush-CoverLetter.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border border-orange-300 px-6 py-2 rounded-xl font-semibold hover:bg-orange-50 transition"
+          href="/Dhanush-Portfolio-Website/Cover_Letter_N_Sai_Dhanush.pdf"
+          download
+          className="border border-orange-400 px-6 py-2 rounded-xl font-semibold hover:bg-orange-50 transition"
         >
           Download Cover Letter
         </a>
@@ -59,3 +61,6 @@ export default function Home() {
     </motion.section>
   );
 }
+
+
+

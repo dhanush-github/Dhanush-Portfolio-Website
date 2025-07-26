@@ -39,7 +39,7 @@ const projects = [
     link: "https://github.com/dhanush-github/Recruit-Restaurant-Visit-Forecasting",
   },
   {
-    title: "Optimizing Marketing Budget Spend (MMM)",
+    title: "Optimizing Marketing Budget Spend using MMM for Eleckart",
     description: "Used Marketing Mix Modelling to optimize marketing budget allocation, improving ROI and channel effectiveness.",
     tech: ["MMM", "ROI Analysis", "Marketing Analytics"],
     link: "https://github.com/dhanush-github/Optimizing-Marketing-Budget-Spend-using-Marketing-Mix-Modelling-MMM-",
@@ -68,7 +68,7 @@ export default function Projects1() {
   return (
     <section className="max-w-5xl mx-auto pt-28 pb-8 px-4">
       <h2 className="text-3xl font-bold text-center bg-gradient-to-r from-orange-400 via-fuchsia-500 to-purple-600 text-transparent bg-clip-text mb-8">
-        Projects
+        AI/ML Projects
       </h2>
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, idx) => (

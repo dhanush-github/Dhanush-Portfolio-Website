@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Skills from "./pages/Skills";
 import Projects1 from "./pages/Projects1";
-import Publications from "./pages/publications";
+import Publications from "./pages/Publications";
+import Analytics from "./pages/Analytics"; // ✅ Import the new Analytics page
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects1" element={<Projects1 />} />
+        <Route path="/analytics" element={<Analytics />} /> {/* ✅ Add route */}
         <Route path="/publications" element={<Publications />} />
       </Routes>
     </BrowserRouter>
